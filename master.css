@@ -1,0 +1,107 @@
+*{
+    font-family: url("https://fonts.google.com/specimen/Josefin+Sans");
+
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.h{
+    width: 100%;
+}
+
+.logo{
+    transform: translatex(-70%);
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+span{
+    display: block;
+    color: hsl(0, 36%, 70%);
+}
+
+h1{
+    font-size: 40px;
+    letter-spacing: 17px;
+}
+
+section{
+    padding: 20px;
+}
+
+input{
+    width: 72%;
+    border: solid 2px hsl(0, 36%, 70%);
+    border-right: transparent;
+    border-radius: 30px;
+    transform: translatex(34px);
+    height: 50px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+button{
+    height: 50px;
+    width: 19%;
+    font-size: 30px;
+    padding: 0;
+    border: transparent;
+    border-radius: 30px;
+    opacity: 1;
+    color: white;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    transform: translate(-30px, 8px);
+}
+
+img.error{
+    transform: translate(-40px, 6px);
+    width: 20px;
+    height: 20px;
+    display: ;
+    visibility: hidden;
+}
+
+h3{
+    display: none;
+    color: hsl(0, 93%, 68%);
+}
+
+p{
+    color: hsl(0, 36%, 70%);
+}
+
+.logo{
+    width: 130px;
+}
+
+@media (min-width :400px) {
+    body{
+        width: 1440px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+    
+    header{
+        order: 2;
+    }
+    
+    .h{
+        height: 100vh;
+    }
+    section{
+        order: 1;
+        transform: translatey(100px);
+        height: 100%;
+        padding: 90px;
+    }
+    .logo{
+        position: absolute;
+        transform: translatex(-640px);
+    }
+}
